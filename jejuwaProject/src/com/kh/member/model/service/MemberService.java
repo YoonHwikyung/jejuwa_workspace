@@ -89,6 +89,7 @@ public class MemberService {
 	 * @param numStr
 	 * @return
 	 */
+	
 	public String certifiedPhoneNumber(String phoneNumber, String numStr) {
         
 		String api_key = "NCSPU8VROTREVNSS";

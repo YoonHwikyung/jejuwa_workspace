@@ -18,7 +18,6 @@ $(document).ready(function(){
     });
 
     // 2) 아이디 검사(첫글자는 반드시 영문자로, 그리고 영문자, 숫자 포함하여 총 4~12자로 입력하시오.)
-
     $("#memId").focusout(function(){
         var regExp = /^[a-z][a-z\d]{3,11}$/;
 
@@ -31,9 +30,8 @@ $(document).ready(function(){
 
         }
     })
-
+    
     // 3) 비밀번호 검사(영문자, 숫자, 특수문자(!@#$%^&*)로 총 8~15자로 입력하시오.)
-
     $("#memPwd").focusout(function(){
         var regExp = /^[a-z\d!@#$%^&*]{8,15}$/i;
 

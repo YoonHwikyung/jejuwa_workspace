@@ -59,7 +59,7 @@ $(document).ready(function(){
                 return false;
             }
 
-            $('#frmFindPwd').submit();
+            $('#frmFindId').submit();
         });
 
 

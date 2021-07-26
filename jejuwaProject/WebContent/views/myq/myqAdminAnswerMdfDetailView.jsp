@@ -152,7 +152,6 @@
                         $("#answer").attr('id','#answer_mdf');
                         
                         $(".ansArea>.title").html(el);
-                        console.log("왜 안바뀌니")
                         
                     } else{
                         console.log("답글실패?")
@@ -165,9 +164,7 @@
             })
         })
 
-
         $("#answer_mdf").click(function(){
-            console.log("수정하기 실행?");
             $.ajax({
                 url: "ans.amyq",
                 type: "get",
@@ -175,7 +172,6 @@
                     mno:<%=q.getMyq_no()%> // answer_text라는 key값으로 id가 answer_text인 값을 넘기겠다
                 },
                 success:function(){
-                    console.log("성공됨??");
                         $(".ansArea>.title").html("");
                         
                 		var el = '<div><b> 답변</b></div><br><div></div>' + 
@@ -193,20 +189,16 @@
         
         
         $("#answer_mdf_suc").click(function(){
-            console.log("mdf_suc 실행?")
             $.ajax({
                 url: "detail.amyq",
                 type: "get",
                 data: {
-                    answer:$("#answer_text").val(), // answer_text라는 key값으로 id가 answer_text인 값을 넘기겠다. 
+                    answer:$("#answer_text").val(),
                     getMyq_no:$("#getMyq_no").val()
                 },
                 success:function(res){
                     if(res > 0){
-                        // 댓글 성공하면 내가 쓴 댓글이 최상단에 붙여지기 (갱신된 리스트 다시 조회해서 뿌려줘야함)
-                        //selectAnsList();
-                        // 깔끔하게 입력했던 textarea의 내용도 비워줘야 함 => replyContent에 ""로 깔끔하게 비워줌
-                        console.log("성공은했니??")
+                        // 답변 수정시, 날짜 최신화, 답변 내용 수정
                         var today = new Date();
                         var date = today.getFullYear() + "-" + (today.getMonth()+1) + "-" + today.getDate();
                         var el = "<div><b> 답변</b></div><br><div>제주와 관리자</div><div> 답변일 :" + date + "</div>"
@@ -214,9 +206,7 @@
                         
                         $(".ansArea>.title").html(el);
                         $("#answer_mdf_suc").attr('id','#answer_mdf');
-                        console.log('답변수정버튼 바뀌어라!');
                     } else{
-                        console.log("답글실패?")
                         // 답글 실패
                     }
                 },
@@ -225,7 +215,6 @@
                 }
             })
         })
-        
         
         </script>
 </body>

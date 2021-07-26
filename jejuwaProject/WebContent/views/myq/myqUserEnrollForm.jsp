@@ -113,7 +113,7 @@
                 </form>
         </div>
     </div>
-    <div style="clear:both;">asdasd<br>asdasd<br>asdasdasd<br></div>
+    <div style="clear:both;"></div>
     <script>
     
     	
