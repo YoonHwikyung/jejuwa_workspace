@@ -29,19 +29,8 @@ public class MyPageMyInfoServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		// 마이페이지 개인정보수정 페이지 포워딩
-//		HttpSession session = request.getSession();
-//		
-//		if(session.getAttribute("loginUser") == null) {
-//			session.setAttribute("alertMsg", "로그인 후 이용 가능한 서비스입니다.");
-//			response.sendRedirect(request.getContextPath());
-//		}else {
-//			request.getRequestDispatcher("views/mypage/myPageMyInfo.jsp");
-//			//System.out.println(session.getAttribute("loginUser"));
-//			
-//		}
 		
+		// 개인정보수정 페이지 접근 제한
 		HttpSession session = request.getSession();
 		
 		if(session.getAttribute("loginUser") == null) {

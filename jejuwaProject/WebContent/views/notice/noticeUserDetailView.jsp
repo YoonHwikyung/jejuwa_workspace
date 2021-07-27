@@ -44,7 +44,7 @@
                 </p>
             </div>
 			
-			<!-- 첨부파일 부분 확인 및 수정 필요!! -->
+			
             <!-- 첨부파일이 있을 경우 -->
             <div id="fileArea">
             <% if(n.getOriginFileName() == null){%>

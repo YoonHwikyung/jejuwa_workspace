@@ -13,6 +13,7 @@
 
 	<%@ include file = "../common/mypageMenubar.jsp" %>
 	<%
+		// 현재 로그인한 회원의 정보 조회
 		int memNo = login.getMemNo();
 		String memId = login.getMemId();
 		String memPwd = login.getMemPwd();
@@ -28,6 +29,7 @@
 			emailId = email.substring(0, email.indexOf("@"));
 			domain = email.substring(email.indexOf("@")+1);
 		}
+		
 		// 생년월일 "19980314" => "1998", "03", "14"
 		String byear = "";
 		String bmonth = "";
@@ -36,7 +38,7 @@
 			byear = memBirth.substring(0, 4);
 			bmonth = memBirth.substring(4, 6);
 			bday = memBirth.substring(6);
-	}
+		}
 %>
 	
 	<div class="outer">
