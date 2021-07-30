@@ -27,7 +27,8 @@
 ![3_1_ERD](https://user-images.githubusercontent.com/78246187/127358887-9163330b-02d3-48a4-baee-c81a3bb5790a.png) <br><br>
 💻 개발자
 ---
-팀원들 링크 추가하기
+| <img src="https://avatars.githubusercontent.com/u/74170717?v=4" width="55" height="55"><br>[김민국](https://github.com/alsrnr45)| <img src="https://avatars.githubusercontent.com/u/78246187?v=4" width="55" height="55"><br>[윤휘경](https://github.com/YoonHwikyung) | <img src="https://avatars.githubusercontent.com/u/78335072?v=4" width="55" height="55"><br>[김수인](https://github.com/suuuinkim) | <img src="https://avatars.githubusercontent.com/u/82308444?v=4" width="55" height="55"><br>[윤현정](https://github.com/hyeonjxxx) | <img src="https://avatars.githubusercontent.com/u/82310323?v=4" width="55" height="55"><br>[문혜원](https://github.com/mhyewon) |
+| --- | --- | --- | --- | --- |
 - - -
 🙋‍♀️ 역할
 ---
